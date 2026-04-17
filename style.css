@@ -803,18 +803,6 @@ body {
 }
 
 /* ===== Certifications ===== */
-.certifications-note {
-    text-align: center;
-    color: var(--accent-light);
-    font-size: 0.9rem;
-    margin: -30px auto 40px;
-    padding: 10px 20px;
-    background: var(--accent-glow);
-    border: 1px dashed rgba(108, 99, 255, 0.3);
-    border-radius: var(--radius-sm);
-    max-width: 500px;
-}
-
 .certifications-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -834,6 +822,9 @@ body {
     transition: var(--transition);
     opacity: 0;
     transform: translateY(20px);
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 .cert-card.visible {
@@ -870,6 +861,19 @@ body {
 .cert-date {
     font-size: 0.8rem;
     color: var(--text-muted);
+}
+
+.cert-verify {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 0.8rem;
+    color: var(--accent);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.cert-card:hover .cert-verify {
+    color: var(--accent-light);
 }
 
 /* ===== Footer ===== */
